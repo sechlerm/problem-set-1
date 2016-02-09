@@ -40,7 +40,7 @@ echo 'answer-4' $seqclust
 
 ## Question 5 How many words on are lines containing the word `bloody` in `hamlet.txt`? (Hint:use `wc` to count words).
 
-hamlet=$(grep 'bloody' $datasets/hamlet.txt | wc -w)
+hamlet=$(grep -i 'bloody' $datasets/hamlet.txt | wc -w)
 
 echo 'answer-5' $hamlet
 
